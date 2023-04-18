@@ -1,0 +1,60 @@
+.container {
+height: 100vh;
+scroll-snap-type: y mandatory;
+scroll-behavior: smooth;
+color: white;
+
+}
+
+img {
+opacity: 0.2;
+}
+.home {
+height: 100vh;
+scroll-snap-type: y mandatory;
+scroll-behavior: smooth;
+overflow-y: auto;
+scroll-snap-align: center;
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(228,14,14,1) 0%, rgba(66,8,80,1) 25%); 
+background-image: url('./assets/portfolio-background.jpeg');
+}
+.about {
+height: 100vh;
+scroll-snap-type: y mandatory;
+scroll-behavior: smooth;
+overflow-y: auto;
+scroll-snap-align: center;
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(228,14,14,1) 0%, rgba(66,8,80,1) 25%);
+}
+
+.tech {
+height: 100vh;
+scroll-snap-type: y mandatory;
+scroll-behavior: smooth;
+overflow-y: auto;
+scroll-snap-align: center;
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(228,14,14,1) 25%, rgba(66,8,80,1) 50%);
+}
+
+.projects {
+height: 100vh;
+scroll-snap-type: y mandatory;
+scroll-behavior: smooth;
+overflow-y: auto;
+scroll-snap-align: center;
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(228,14,14,1) 50%, rgba(66,8,80,1) 75%);
+}
+
+.contact {
+height: 100vh;
+scroll-snap-type: y mandatory;
+scroll-behavior: smooth;
+overflow-y: auto;
+scroll-snap-align: center;
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(228,14,14,1) 75%, rgba(66,8,80,1) 100%);
+}
