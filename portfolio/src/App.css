@@ -1,0 +1,67 @@
+.container {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  color: white;
+
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: coral;
+}
+
+.list {
+  display: flex;
+  justify-content: center;   
+}
+img {
+  opacity: 0.2;
+}
+.home {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  scroll-snap-align: center;
+  background-image: url(/Users/learnacademy/Desktop/Portfolio/portfolio/src/assets/portfolio-background.jpeg)
+}
+.about {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  scroll-snap-align: center;
+  background: rgb(2,0,36);
+  background-image: url(/Users/learnacademy/Desktop/Portfolio/portfolio/src/assets/portfolio-background.jpeg)
+}
+
+.tech {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  scroll-snap-align: center;
+  background: rgb(2,0,36);
+  background-image: url(/Users/learnacademy/Desktop/Portfolio/portfolio/src/assets/portfolio-background.jpeg)
+}
+
+.projects {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  scroll-snap-align: center;
+  background: rgb(2,0,36);
+  background-image: url(/Users/learnacademy/Desktop/Portfolio/portfolio/src/assets/portfolio-background.jpeg)
+}
+
+.contact {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  scroll-snap-align: center;
+  background: rgb(2,0,36);
+  background-image: url(/Users/learnacademy/Desktop/Portfolio/portfolio/src/assets/portfolio-background.jpeg)
+}
