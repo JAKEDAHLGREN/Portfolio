@@ -1,27 +1,26 @@
-import React from 'react'
-import './App.css'
-import HomePage from './components/HomePage'
-import AboutMe from './components/AboutMe'
-import Contact from './components/Contact'
-import Projects from './components/Projects'
-import Tech from './components/Tech'
-import Navbar from './components/Navbar'
+import React from "react";
+import "./App.css";
 
+import { Routes, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import HomePage from "./components/HomePage";
+import Contact from "./components/Contact";
+import Projects from "./components/Projects";
+import Tech from "./components/Tech";
+import Navbar from "./components/Navbar";
 
 function App() {
-  return (
-
-    <div className='container'>
-      <Navbar className='navbar'/>
-      <HomePage className='home'/>
-      <AboutMe className='about'/>
-      <Tech className='tech'/>
-      <Projects className='projects'/>
-      <Contact className='contact'/>
-
-    
-    </div>
-  )
+	return (
+		<>
+			{<Navbar />}
+			<Routes>
+				<Route path="/" element={<HomePage />} />
+				<Route path="/tech" element={<Tech />} />
+				<Route path="/projects" element={<Projects />} />
+				<Route path="/contact" element={<Contact />} />
+			</Routes>
+		</>
+	);
 }
 
 export default App;
