@@ -1,67 +1,252 @@
 .container {
-  height: 100vh;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
+  text-align: center;
   color: white;
-
+}  
+.name {
+  font-size: 2rem;
 }
-.navbar {
+.nav {
+  background-color: rgb(55, 3, 38);
+  color:white;
   display: flex;
-  justify-content: center;
-  background-color: coral;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: .25rem;
+}
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: .25rem;  
 }
 
-.list {
+.nav li.active {
+  background-color: rgba(255, 0, 0, 0.458);
+}
+
+.nav li:hover{
+  background-color: rgb(238, 92, 39);
+}
+.li {
   display: flex;
   justify-content: center;   
 }
-img {
-  opacity: 0.2;
-}
-.home {
-  height: 100vh;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  overflow-y: auto;
-  scroll-snap-align: center;
-  background-image: url(/Users/learnacademy/Desktop/Portfolio/portfolio/src/assets/portfolio-background.jpeg)
-}
-.about {
-  height: 100vh;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  overflow-y: auto;
-  scroll-snap-align: center;
-  background: rgb(2,0,36);
-  background-image: url(/Users/learnacademy/Desktop/Portfolio/portfolio/src/assets/portfolio-background.jpeg)
-}
 
+/* .homepage {
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  color: rgb(255, 255, 255);
+  background-image: url(/Users/learnacademy/Desktop/Portfolio/portfolio/src/assets/Geometric-space.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+} */
+
+.aboutme {
+  /* height: 100vh; */
+  display:flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* color: rgb(255, 255, 255); */
+  position: relative;
+  background-image: url(/Users/learnacademy/Desktop/Portfolio/portfolio/src/assets/Geometric-space.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+.me {
+   /* display:flex;
+  flex: 1;
+  padding-left: 40px;
+  padding-right: 100px;   */
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.me img {
+  max-width: 100%;
+  height: auto;
+}
+.parag {
+  /* float: left; */
+  /* height: calc(100vh - 50px); */
+  /* width: 50%; */
+  /* padding: 15px; */
+  /* align-items: center; */
+  margin-top: 20px;
+  padding: 20px;
+  text-align: justify;
+  color:white;
+}
+.parag p {
+  margin-bottom: 20px;
+}
+.p1 {
+  border-style:solid;
+  border-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.65);
+  max-width: 50ch;
+}
+.p2 {
+  border-style:solid;
+  border-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.65);
+  max-width: 50ch;
+}
+.p3 {
+  border-style:solid;
+  border-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.65);
+  max-width: 50ch;
+}
+.p4 {
+  border-style:solid;
+  border-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.65);
+  max-width: 50ch;
+}
 .tech {
   height: 100vh;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  overflow-y: auto;
-  scroll-snap-align: center;
-  background: rgb(2,0,36);
-  background-image: url(/Users/learnacademy/Desktop/Portfolio/portfolio/src/assets/portfolio-background.jpeg)
+  display:flex;
+  justify-content:center; 
+  align-items:center; 
+  color: white;
+  background-image: url(/Users/learnacademy/Desktop/Portfolio/portfolio/src/assets/Geometric-space.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat; 
+}
+.tech-title {
+  display:flex;
+  flex-direction: column;
+  padding:114px;
+  border-style:solid;
+  border-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.65);
+
+}
+.stack {
+align-items: right;
 }
 
 .projects {
   height: 100vh;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  overflow-y: auto;
-  scroll-snap-align: center;
-  background: rgb(2,0,36);
-  background-image: url(/Users/learnacademy/Desktop/Portfolio/portfolio/src/assets/portfolio-background.jpeg)
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center;
+  color: white;
+  background-image: url(/Users/learnacademy/Desktop/Portfolio/portfolio/src/assets/Geometric-space.jpeg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat:no-repeat; 
 }
+.tictac {
+  display: flex;
+  flex-direction: column;
+  border-style:solid;
+  padding: 5px;
+  border-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.65);
 
+}
+.ttt {
+  height:50vh;
+  width:30vh;
+}
+.treasure {
+  display: flex;
+  flex-direction: column;
+  border-style:solid;
+  padding: 5px;
+  border-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.65);
+}
+.plt {
+  display: flex; 
+  flex-direction: column;
+  border-style:solid;
+  padding: 5px;
+  border-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.65);  
+}
+.tinder {
+  display: flex;
+  flex-direction: column;
+  border-style:solid;
+  padding: 5px;
+  border-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.65); 
+}
+.cap {
+  display: flex;
+  flex-direction: column;
+  border-style:solid;
+  padding: 8px;
+  border-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.65);   
+}
+.soon {
+  height:40vh;
+  width:20vh;
+}
 .contact {
   height: 100vh;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  overflow-y: auto;
-  scroll-snap-align: center;
-  background: rgb(2,0,36);
-  background-image: url(/Users/learnacademy/Desktop/Portfolio/portfolio/src/assets/portfolio-background.jpeg)
+  display:flex; 
+  justify-content: center; 
+  color: rgb(249, 244, 244);
+  background-image: url(/Users/learnacademy/Desktop/Portfolio/portfolio/src/assets/Geometric-space.jpeg) !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+.form {
+  display:flex;
+  width:35%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+.link {
+  color:white;
+  list-style: none;
+  text-decoration: none;
+}
+
+.button{
+ width:25%;
+ background: linear-gradient(to right,#c60fc6 ,#6449a8);
+ background-color: #c60fc6;
+ color: #ffffff;
+ font-family: Arial;
+ font-size: 19px;
+ font-weight: 400;
+ font-style: normal;
+ text-decoration: none;
+ text-align: center;
+ padding: 11px 23px;
+ border: 0px solid #000;
+ border-radius: 4px;
+ display: inline-block;
+ box-shadow: 0px 5px 7px 0px #2D2D2D;
+}
+a.button:hover{
+ background: linear-gradient(to right,#cc52cc ,#7d6ab3);
+ background-color: #cc52cc;
+}
+a.button:active{
+ transform: scale(0.95);
 }
