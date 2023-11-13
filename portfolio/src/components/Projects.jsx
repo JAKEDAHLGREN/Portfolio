@@ -6,13 +6,14 @@ import {
 	CarouselIndicators,
 	CarouselCaption,
 } from 'reactstrap';
+import taskBuddy from '../assets/task-buddy.jpeg'
 
 const Projects = (...args) => {
 	const items = [
 		{
-			src:'./techpic/TTT.png',
+			src: taskBuddy ,
 			altText: 'Project 1',
-			caption: 'ConcertGo',
+			caption: 'Task Buddy',
 			key: 1,
 		},
 		{
